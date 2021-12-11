@@ -1,0 +1,84 @@
+.Home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ProfileImage {
+  width: 40%;
+  height: 100%;
+}
+
+.ProfileImage img {
+  width: 100%;
+  height: auto;
+ 
+  /* box-shadow: 12px 0 #3eb0f7, 24px 0 #5db9f3, 36px 0 #6fc4f9;
+  border-radius: 50%;
+  margin-left: 15em;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row; */
+  
+ 
+}
+
+.Description {
+  margin-left: 10em;
+  padding: 0 15px;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+
+}
+
+.Desciption .greeting h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin: 24px 0;
+}
+
+.Description .greeting .smallBio {
+  letter-spacing: 1px;
+  color: #5F6F81;
+  font-size: 1rem;
+  min-width: 250px;
+  line-height: 1.4;
+}
+.color{
+  color: #3eb0f7;
+  
+}
+
+.socialsResume{
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.resumeLink{
+
+    background-color: #3eb0f7;
+    padding: 15px 35px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: inline-block;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.LinkdeIn {
+    font-size: 40px;
+    margin-left: 1em;
+}
+
+.GitHubLink{
+  font-size: 40px;
+  margin-left: 1em;
+}

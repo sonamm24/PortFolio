@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Navbar } from './Components/NavBar/NavBar';
+import Home from './Components/Home/Home';
+// import AboutMe from './Components/AboutMe/AboutMe';
+// import Skills from './Components/Skills/Skills';
+// import Projects from './Components/Projects/Projects';
+// import Contact from './Components/Contact/Contact';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Navbar visibilityStart={false} />
+        <div className='RouteWrapper'>
+          <Routes>
+            <Route path="/home" exact element={<Home />} />
+            {/* <Route path="/aboutme" element={<AboutMe />} /> */}
+            {/* <Route path="/Skills" element={<Skills />} /> */}
+            {/* <Route path="/Projects" element={<Projects />} /> */}
+            {/* <Route path="/Contact" element={<Contact />} /> */}
+          </Routes>
+        </div>
+      </Router>
+    );
+  }
 }
 
-export default App;
