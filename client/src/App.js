@@ -9,7 +9,6 @@ import Home from './Components/Home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
-
 export class App extends React.Component {
   render() {
     return (
@@ -17,7 +16,7 @@ export class App extends React.Component {
         <Navbar visibilityStart={false} />
         <div className='RouteWrapper'>
           <Routes>
-            <Route path="/home" exact element={<Home />} />
+            <Route path="/" exact element={<Home />}/>
             {/* <Route path="/aboutme" element={<AboutMe />} /> */}
             {/* <Route path="/Skills" element={<Skills />} /> */}
             {/* <Route path="/Projects" element={<Projects />} /> */}

@@ -2,83 +2,91 @@
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
+
+}
+
+.Header {
+  width: 80%;
+  height: 80%;
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-top: 7em;
+  margin-left: 6em;
 }
 
 .ProfileImage {
-  width: 40%;
+  width: 80%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .ProfileImage img {
-  width: 100%;
+  width: 50%;
   height: auto;
- 
-  /* box-shadow: 12px 0 #3eb0f7, 24px 0 #5db9f3, 36px 0 #6fc4f9;
+  box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
   border-radius: 50%;
-  margin-left: 15em;
-  margin-top: 5em;
   display: flex;
-  flex-direction: row; */
-  
- 
+  flex-direction: row;
+  margin-right: 8em;
+
 }
 
 .Description {
-  margin-left: 10em;
-  padding: 0 15px;
   width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  -webkit-box-flex: 0;
-  flex: 0 0 50%;
+  height: 100;
+  margin-right: 0em;
 
-}
-
-.Desciption .greeting h1 {
-  font-size: 2.5rem;
-  letter-spacing: 2px;
-  margin: 24px 0;
-}
-
-.Description .greeting .smallBio {
-  letter-spacing: 1px;
-  color: #5F6F81;
-  font-size: 1rem;
-  min-width: 250px;
-  line-height: 1.4;
-}
-.color{
-  color: #3eb0f7;
   
+  
+
 }
 
-.socialsResume{
-  -webkit-box-pack: center;
-  justify-content: center;
+.Description span.color {
+  color: black;
+}
+
+.socialsResume {
   display: flex;
-  margin-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+  margin-right: 10em;
+
+
 }
 
-.resumeLink{
-
-    background-color: #3eb0f7;
-    padding: 15px 35px;
-    border-radius: 40px;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-weight: 300;
-    display: inline-block;
-    color: white;
-    transition: all 0.3s ease-in;
+.resumeLink {
+  background-color: #8444df;
+  padding: 15px 35px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: inline-block;
+  color: white;
+  transition: all 0.3s ease-in;
+  height: 50px;
+  margin-left: 0em;
 }
 
 .LinkdeIn {
-    font-size: 40px;
-    margin-left: 1em;
-}
-
-.GitHubLink{
   font-size: 40px;
   margin-left: 1em;
 }
+
+.GitHubLink {
+  font-size: 40px;
+  margin-left: 1em;
+}
+
+.headingcolor{
+  color: #8444df;
+}
+
