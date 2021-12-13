@@ -1,0 +1,31 @@
+.navbar{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  background-color: #8444df;
+  height: 100%;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.navbar:hover {
+  width: 150px;
+}
+
+.navbar h1 {
+  padding: 2em 0px;
+  background-color: rgba(0, 0, 0, 0.212);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.nav-menu-items {
+  width: 100%;
+  margin-top: 12em;
+}
